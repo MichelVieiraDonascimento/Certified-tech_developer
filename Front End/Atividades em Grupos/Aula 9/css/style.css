@@ -8,6 +8,10 @@ body {
 
 }
 
+p {
+    color: aliceblue;
+}
+
 .page-title {
 
     color: rgb(236, 54, 78);
