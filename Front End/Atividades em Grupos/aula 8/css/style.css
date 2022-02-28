@@ -1,0 +1,20 @@
+    body{
+        background-image: url('../img/untitleddesign_1_original-102-300x300.png');
+
+    }
+
+    h1{
+        color: aliceblue;
+    }
+
+    h2{
+        color: aqua;
+    }
+
+    p{
+        color: white;
+    }
+
+a{
+    color: yellow;
+}
