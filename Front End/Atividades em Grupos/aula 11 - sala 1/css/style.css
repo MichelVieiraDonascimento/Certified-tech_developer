@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.fundo {
+    display: flex;
+    position: absolute
+
+    margin: ;
+    background-color: #222222;
+}
+
+.botoes {
+    display: flex;
+    position: absolute;
+    width: 44px;
+    height: 19px;
+    left: 1020px;
+    top: 40px;
+    padding: ;
+    margin: 5;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    
+}
+
+p {
+    color: white;
+}
+
+.corpo {
+    display: flex;
+}
