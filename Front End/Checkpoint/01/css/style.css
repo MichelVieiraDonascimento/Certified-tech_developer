@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(59, 206, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+    
+}
+
+.cabecalho {
+    position: sticky;
+    top: 0;
+}
+
+
+h1 {
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+
+.campo-grande {
+    padding: 20px;
+    border: solid 3px black;
+    border-radius: 20px;
+}
+
+
+.home img {
+    width: 10px;
+    height: ;
+}
+
+ .home {
+    padding: 10px;
+    border: solid 3px black;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.curiosidade {
+    padding: 10px;
+    border: solid 3px black;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+
+.videos {
+    padding: 10px;
+    border: solid 3px black;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+
+.home:hover { 
+    color: red; 
+    transition: 0.5s;   
+    opacity: 0.7;   
+}
+
+
+.curiosidade:hover { 
+    color: red; 
+    transition: 0.5s;   
+    opacity: 0.7;   
+}
+
+
+.videos:hover { 
+    color: red; 
+    transition: 0.5s;   
+    opacity: 0.7;   
+}
+
+.sobre-a-cidade {
+    display: flex;
+    background-image: url("/img/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    margin-bottom: 40px;
+}
+
+
+.texto-img {
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 20%;
+}
+
+
+.texto-img p {
+    font-family: sans-serif;
+    color: rgb(255, 251, 0);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    
+   
+}
+
+
+.curiosidades-da-cidade {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 52px 0px;
+}
+
+.curiosidade-1 {
+    margin: ;
+    padding: 10px;
+    border: solid 10px black;
+    border-radius: 40px;
+    background-color: rgb(199, 199, 199);
+}
+
+.curiosidade-1 img{
+    height: 200px;
+}
+
+.curiosidade-1 p{
+    width: 350px;
+}
+
+.curiosidade-1:hover {
+ 
+    transform: scale(1.25);
+    filter: brightness(100%);
+}
+
+.curiosidade-2:hover {
+ 
+    transform: scale(1.25);
+    filter: brightness(100%);
+}
+
+
+.curiosidade-2 {
+    margin: ;
+    padding: 10px;
+    border: solid 10px black;
+    border-radius: 40px;
+    background-color: rgb(199, 199, 199);
+}
+
+.curiosidade-2 img{
+    height: 200px;
+}
+
+.curiosidade-2 p {
+    width: 350px;
+}
+
+.curiosidade-3:hover {
+ 
+    transform: scale(1.25);
+    filter: brightness(100%);
+}
+
+
+.curiosidade-3 {
+    margin: ;
+    padding: 10px;
+    border: solid 10px black;
+    border-radius: 40px;
+    background-color: rgb(199, 199, 199);
+}
+.curiosidade-3 img{
+    height: 200px;
+}
+
+.video-yt {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 80px;
+  
+}
+
+.video-yt iframe {
+    height: 551px;
+    width: 977px;
+
+}
+
+footer {
+    background-color: rgb(59, 206, 1);
+    width: 100%;
+    height: 80px;
+}
+
+
+@media (max-width: 426px) {
+
+    h1 {
+        font-size: 15px;
+        font-family: sans-serif;
+    }
+
+    .campo-grande {
+        padding: 1px;
+        border: solid 3px black;
+        border-radius: 20px;
+    }
+
+    .home {
+        padding: 5px;
+        border: solid 3px black;
+        border-radius: 20px;
+        font-size: 10px;
+    }
+
+    
+    .curiosidade {
+        padding: 5px;
+        border: solid 3px black;
+        border-radius: 20px;
+        font-size: 10px;
+     
+    }
+    
+    
+    .videos {
+        padding: 5px;
+        border: solid 3px black;
+        border-radius: 20px;
+        font-size: 10px;
+    }
+
+    .video-yt iframe {
+        height: 157px;
+        width: 277px;
+    
+    }
+
+    .texto-img {
+        font-size: 30px;
+    }
+}
