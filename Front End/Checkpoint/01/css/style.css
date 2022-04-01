@@ -5,6 +5,11 @@
     font-family: sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 a {
     text-decoration: none;
 }
@@ -247,8 +252,6 @@ footer {
 @media (max-width: 426px) {
   
 
-
-
     .cabecalho {
         margin-top: -100%;
         transition:all 1s;
@@ -304,14 +307,29 @@ footer {
     .texto-img {
         font-size: 30px;
     }
+    
+    .curiosidade-1 {
+        border: solid 5px black;
+    
+    }
 
     .curiosidade-1:hover {
         transform: none;
     }
 
+    .curiosidade-2 {
+        border: solid 5px black;
+    
+    }
+
     .curiosidade-2:hover {
         transform: none;
      }
+
+     .curiosidade-3 {
+        border: solid 5px rgb(56, 56, 56);
+    
+    }
 
     .curiosidade-3:hover {
         transform: none;
@@ -331,3 +349,90 @@ footer {
         }
 
     }
+
+
+    @media (max-width: 726px) {
+  
+
+        .cabecalho {
+            margin-top: -100%;
+            transition:all 1s;
+            
+        }
+    
+        label {
+            display: block;
+        }
+    
+        #botao-menu:checked ~ .cabecalho{
+            margin-top: -50px;
+            height: 50px;
+        
+        }
+    
+        h1 {
+            display: none;
+        }
+    
+        h1 {
+            font-size: 15px;
+            font-family: sans-serif;
+    
+        }
+    
+        .campo-grande {
+            padding: 1px;
+            border: solid 3px black;
+            border-radius: 20px;
+        }
+    
+        .home {
+            padding: 5px;
+            border: solid 3px black;
+            border-radius: 20px;
+            font-size: 10px;
+        }
+    
+        
+        .curiosidade {
+            padding: 5px;
+            border: solid 3px black;
+            border-radius: 20px;
+            font-size: 10px;
+         
+        }
+        
+        h2 {
+            padding-left: 25px;
+        }
+    
+        .texto-img {
+            font-size: 30px;
+        }
+    
+        .curiosidade-1:hover {
+            transform: none;
+        }
+    
+        .curiosidade-2:hover {
+            transform: none;
+         }
+    
+        .curiosidade-3:hover {
+            transform: none;
+         }
+    
+        .videos {
+            padding: 5px;
+            border: solid 3px black;
+            border-radius: 20px;
+            font-size: 10px;
+        }
+    
+        .video-yt iframe {
+            height: 157px;
+            width: 277px;
+        
+            }
+    
+        }
