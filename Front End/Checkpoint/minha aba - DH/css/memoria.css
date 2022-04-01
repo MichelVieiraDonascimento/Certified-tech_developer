@@ -22,6 +22,59 @@ body{
     justify-content: space-between;
 }
 
+.logo{
+    width: 130px;
+    padding-left: 30px;
+}
+
+.search{
+    margin-right: 20px;
+    opacity: 0.5;
+    border: none;
+    height: 46px;
+    width: 46px;
+    padding-left: 46px;
+    border-radius: 50%;
+    background: url(../img/lupa.jpg) no-repeat 10px/24px, #fff;
+    cursor: pointer;
+    transition-property: width, border-radius, box-shadow;
+    transition-duration: 300ms;
+}
+
+.search:focus{
+    width: 240px;
+    opacity: 1;
+    border-radius: 4px;
+    box-shadow: 0 0 0 2px #12c8ff;
+    outline: none;
+    cursor: auto;
+}
+
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu ul{
+    list-style: none;
+}
+
+#menu ul li{
+   display: inline;
+   padding-right: 3vh;
+}
+
+#menu ul li a{
+    display: inline-block;
+}
+
+#menu a{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
 .container-produto {
     background-color: rgb(255, 255, 255);
     display: grid;
