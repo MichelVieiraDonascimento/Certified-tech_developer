@@ -1,102 +1,115 @@
 const pessoa = [
     {
-        altura:1.82,
-        sexo:"M"
-    },
-    {
-        altura:1.75,
-        sexo:"F"
-    }, 
-    {
-        altura:1.78,
+        altura: 1.78,
         sexo: "M"
     },
     {
-        altura:1.50,
-        sexo:"F"
+        altura: 1.60,
+        sexo: "F"
     },
     {
-        altura:1.65,
-        sexo:"F"
+        altura: 1.65,
+        sexo: "F"
     },
     {
-        altura:1.88,
-        sexo:"M"
+        altura: 1.88,
+        sexo: "M"
     },
     {
-        altura:1.70,
-        sexo:"M"
+        altura: 1.70,
+        sexo: "M"
     },
     {
-        altura:1.73,
-        sexo:"M"
+        altura: 1.73,
+        sexo: "F"
     },
     {
-        altura:1.73,
-        sexo:"F"
+        altura: 1.65,
+        sexo: "M"
     },
     {
-        altura:1.65,
-        sexo:"M"
+        altura: 1.70,
+        sexo: "F"
     },
     {
-        altura:1.70,
-        sexo:"F"
+        altura: 1.71,
+        sexo: "M"
     },
     {
-        altura:1.71,
-        sexo:"M"
+        altura: 1.83,
+        sexo: "M"
     },
     {
-        altura:1.83,
-        sexo:"M"
+        altura: 1.84,
+        sexo: "M"
     },
     {
-        altura:1.84,
-        sexo:"M"
+        altura: 1.78,
+        sexo: "M"
     },
     {
-        altura:1.78,
-        sexo:"M"
+        altura: 1.82,
+        sexo: "M"
+    },
+    {
+        altura: 1.78,
+        sexo: "M"
+    },
+    {
+        altura: 1.97,
+        sexo: "M"
     }
-]
-
-let mulheres = pessoa.filter ( function (num) {
-    return num = (pessoa.sexo === "F"  )
-})
-
-console.log (mulheres)
-    
+];
 
 
-// function altura (altura) {
-//     let alturaMan = []
-//     let alturaGirl = []
-//     let resposta = []
-// }
-
-// for (let i=0; i <altura.length; i++) {
-//     if (altura[i].sexo === "F") {
-//         alturaGirl.push (altura[i].altura)
-//         console.log ()
-//     }else {
-//         alturaMan.push(altura[i].altura)
-//     }
-// }
+ console.log(menorAltura)
 
 
+ pessoa.forEach(function (p){
+     if(p.altura > maiorAltura){
+         maiorAltura = p.altura;
+     }
+  });
 
+  console.log(maiorAltura)
 
+ function Altura(pessoa) {
 
-// prof
+     let maiorAltura = 0;
+     let menorAltura = 100;
 
-let menorAltura = 100;
-let maiorAltura = 0;
+     for (let i = 0; i < pessoa.length; i++) {
+         if (pessoa[i].altura > maiorAltura) {
+             maiorAltura = pessoa[i].altura;
+         } else if (pessoa[i].altura < menorAltura) {
+             menorAltura = pessoa[i].altura;
+         }
+     }
+     return "A maior altura é: " + maiorAltura + ", e a menor altura é: " + menorAltura;
+ }
+ console.log(Altura(pessoa));
 
-pessoa.forEach(function(p){
-    // console.log(p.altura)
-    if (p.altura < menorAltura) {
-        menorAltura = p.altura
-    }
-});
-console.log(menorAltura)
+ function mediaSexoF(pessoa){
+
+     let contador=0;
+     let mediaAltura=0;   
+
+     for (let i=0; i < pessoa.length; i++){
+         if(pessoa[i].sexo == "F"){
+             mediaAltura += pessoa[i].altura;
+             contador ++;
+         }
+     }
+     let resultado = (mediaAltura/contador);
+     return resultado;
+ }
+
+ console.log(mediaSexoF(pessoa));
+
+function contadorSexoM(pessoa){
+    return pessoa.filter(function(i){
+        return i.sexo =="M";
+    }).length
+}
+
+console.log(contadorSexoM(pessoa));
