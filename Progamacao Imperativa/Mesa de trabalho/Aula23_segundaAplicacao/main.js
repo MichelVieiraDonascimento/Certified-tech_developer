@@ -1,20 +1,3 @@
-//espectador
-//array espectador
-
-//filme
-// crio uma nova estancia
-//popular obj
-
-//logica
-//require
-
-
-// 2 objs 
-// obj espectador -> idade, opnião 
-// obj filme -> espectadores
-// obj filme -> 3 methodos 
-// Arquivo main vai usar os dois modulos para criar a aplicação
-
 
 // a média das idades das pessoas que responderam ótimo;
 
