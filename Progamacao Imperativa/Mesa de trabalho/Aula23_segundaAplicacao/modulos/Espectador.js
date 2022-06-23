@@ -4,4 +4,4 @@ const espectador = function (idade,opiniao){
     this.idade = idade;
     this.opiniao = opiniao;
   }
-  module.exports = espectador
+  module.exports = espectador 
