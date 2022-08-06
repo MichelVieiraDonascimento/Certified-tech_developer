@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <header>
+        <img class="ctd" src="./img/CTD.jpg" alt="CTD">
+        <H1>Calculadora</H1>
+        <img src="./img/dh.png" alt="DH">
+    </header>
+    <main>
+        
+        <div class="container">
+            <div class="res"> 
+                <p id="resultado"></p>   
+            </div>
+        
+            <div class="resultados">
+
+                <button  class="botao" onclick="insert('7')">7</button>
+                <button class="botao" onclick="insert('8')" >8</button>
+                <button class="botao" onclick="insert('9')" >9</button>
+                <button class="botao" onclick="insert('*')" >x</button>
+                <button class="botao" onclick="insert('4')" >4</button>
+                <button class="botao" onclick="insert('5')" >5</button>
+                <button class="botao" onclick="insert('6')" >6</button>
+                <button class="botao" onclick="insert('-')" >-</button>
+                <button class="botao" onclick="insert('1')" >1</button>
+                <button class="botao" onclick="insert('2')" >2</button>
+                <button class="botao" onclick="insert('3')" >3</button>
+                <button class="botao" onclick="insert('+')" >+</button>
+                <button class="botao" onclick="clean()">C</button>
+                <button class="botao" onclick="insert('0')" >0</button>
+                <button class="botao" onclick="insert('/')" >/</button>
+                <button class="okay" onclick="calcular()" >=</button>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>   
+</body>
+</html>
