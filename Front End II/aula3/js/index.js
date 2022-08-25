@@ -36,7 +36,11 @@
 // APRIMORAÇÃO
 function insert(num) {
     var numero = document.getElementById('resultado').innerHTML;
-    document.getElementById('resultado').innerHTML = numero + num;
+    console.log(numero);
+      document.getElementById('resultado').innerHTML = numero + num;  
+    
+
+
 }
 function clean (){
     document.getElementById('resultado').innerHTML = ""
@@ -48,8 +52,32 @@ function calcular () {
     }else {
         document.getElementById('resultado').innerHTML = "Nada para calcular"
     }
+
+    console.log(resultado);
 }
 function back(){
     var resultado = document.getElementById('resultado').innerHTML;
     document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length -1);
 } 
+
+
+
+
+
+// function somenteNumeros(e) {
+//     var charCode = e.charCode ? e.charCode : e.keyCode;
+//     // charCode 8 = backspace   
+//     // charCode 9 = tab
+//    if (charCode != 8 && charCode != 9) {
+//        // charCode 48 equivale a 0   
+//        // charCode 57 equivale a 9
+//        var max = 16;
+//        var num = document.getElementById('num');           
+            
+//        if ((charCode < 48 || charCode > 57)||(num.value.length >= max)) {
+//           return false;
+//        }
+       
+//     }
+// }
+// <input id="num" placeholder="Digite o numero" type="number" onkeypress="return somenteNumeros(event)" required>
