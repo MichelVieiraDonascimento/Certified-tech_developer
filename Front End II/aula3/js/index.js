@@ -39,7 +39,7 @@ function insert(num) {
     console.log(numero);
       document.getElementById('resultado').innerHTML = numero + num;  
     
-
+//dcwsd
 
 }
 function clean (){
