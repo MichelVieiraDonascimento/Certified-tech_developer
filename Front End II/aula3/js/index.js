@@ -2,7 +2,6 @@
 
 
 
-
 // ATIVIDADE CONFORME FOI PEDIDO
 
 // let operacao = prompt ("Insira a operação matemática: (+, -, *, /) 'EX: 2+4'")

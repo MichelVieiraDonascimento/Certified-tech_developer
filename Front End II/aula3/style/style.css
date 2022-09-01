@@ -137,6 +137,32 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
 
 
 
+@media (max-width: 726px) {
+ .container{
+  margin-top: -50px;
+  transform: scale(0.49);
+ } 
+
+ .resultados{
+  padding: 20px;
+ }
+ .ctd{
+  max-width: 90px;
+ }
+ .dh{
+  max-width: 90px;
+  margin-right: 8px;
+ }
+ h1{
+  font-size: 20px;
+ }
+ .cabeca{
+  
+ }
+}
+
+
+
 
 
 
