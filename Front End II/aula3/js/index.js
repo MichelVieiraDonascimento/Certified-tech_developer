@@ -31,25 +31,27 @@
 // }
 
 
-
+//dcwsd
 // APRIMORAÇÃO
 function insert(num) {
     var numero = document.getElementById('resultado').innerHTML;
     console.log(numero);
-      document.getElementById('resultado').innerHTML = numero + num;  
-    
-//dcwsd
+      document.getElementById('resultado').innerHTML = numero + num; 
+      verificaTamanho();
 
 }
 function clean (){
-    document.getElementById('resultado').innerHTML = ""
+    document.getElementById('resultado').innerHTML = "";
+    verificaTamanho();
 }
 function calcular () {
+    
     var resultado = document.getElementById('resultado').innerHTML;
-    if(resultado){
+
+     if(resultado){
         document.getElementById('resultado').innerHTML = eval(resultado);
     }else {
-        document.getElementById('resultado').innerHTML = "Nada para calcular"
+        document.getElementById('resultado').innerHTML = ""
     }
 
     console.log(resultado);
@@ -57,8 +59,21 @@ function calcular () {
 function back(){
     var resultado = document.getElementById('resultado').innerHTML;
     document.getElementById('resultado').innerHTML = resultado.substring(0, resultado.length -1);
+    verificaTamanho();
 } 
 
+
+ function verificaTamanho() { 
+    let chama = document.getElementById('resultado').innerHTML;
+       if(chama.length <= 30){
+       let res = document.getElementById("rees").style.fontSize = "64px"
+       }else if(chama.length >= 39){
+        let res = document.getElementById("rees").style.fontSize = "30px"
+      }
+       else if (chama.length >= 30){
+       let res = document.getElementById("rees").style.fontSize = "50px"
+       }
+}
 
 
 
