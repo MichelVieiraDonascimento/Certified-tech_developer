@@ -1,0 +1,42 @@
+header {
+  display: flex;
+  background-color: #0B973A ;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  font-size: 20px;
+  color: #FFFFFF; 
+  
+}
+
+
+h2{
+  margin-top: 33px;
+  display: flex;
+  justify-content: center;
+}
+#corpo{
+  padding:  33px 40px 200px 40px;
+}
+p{
+  font-size: 18px;
+}
+
+#equipe{
+  margin-left: 40px;
+  margin-bottom: 100px;
+}
+
+footer{
+  display: flex;
+  background-color: #0B973A ;
+  height: 133px;
+  justify-content: center;
+  align-items: center;
+}
+h3{
+  font-size: 18px;
+  color: #FFFFFF;
+}
