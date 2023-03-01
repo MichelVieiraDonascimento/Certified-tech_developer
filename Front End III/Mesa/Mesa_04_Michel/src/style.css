@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, Helvetica, Arial, sans-serif;
+  }
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ED1B2E;
+    height: 62px;
+    padding-left: 43px;
+    padding-right: 33px; 
+  }
+
+.lista{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+header > img{
+    border-radius: 50%;
+}
+
+li{
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #a3a3a3;
+}
+
+h1{
+    font-size: 25px;
+    color: 
+    #171717;
+    padding: 50px;
+}
+main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.pratos{
+    max-width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    gap: 100px;
+    padding-bottom: 60px;
+}
+
+.prato {
+    display: grid;
+    place-items: center;
+    gap: 5px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    
+}
+main  img {
+    border-radius: 10px;
+    margin-top: 1rem;
+    
+}
+
+.prato img{
+    width: 157px;
+    height: 115px;
+    
+}
+
+footer{
+    display: grid;
+    background-color: #ED1B2E;
+    place-items: center;
+    height: 90px;
+
+}
+footer a{
+    
+
+    
+    
+}
